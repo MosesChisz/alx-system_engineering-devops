@@ -12,7 +12,7 @@ frontend node-http
 backend the_backend
     balance roundrobin
     option forwardfor
-    server 339670-web-01 54.146.63.177.80 check
-    server 339670-web-02 35.153.255.138.80 check
+    server 339670-web-01 54.146.63.177:80 check
+    server 339670-web-02 35.153.255.138:80 check
 " | sudo tee -a /etc/haproxy/haproxy.cfg > /dev/null
 service haproxy restart
