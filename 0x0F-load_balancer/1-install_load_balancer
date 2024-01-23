@@ -16,3 +16,4 @@ backend the_backend
     server 339670-web-02 35.153.255.138 check
 " | sudo tee -a /etc/haproxy/haproxy.cfg > /dev/null
 service haproxy restart
+
